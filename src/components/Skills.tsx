@@ -41,7 +41,7 @@ const Skills = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge key={skillIndex} variant="secondary" className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white border-white/20">
+                    <Badge key={skillIndex} className="bg-gradient-to-r from-blue-500/30 to-purple-500/30 text-white border-white/30 hover:from-blue-500/40 hover:to-purple-500/40 transition-all">
                       {skill}
                     </Badge>
                   ))}

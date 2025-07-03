@@ -30,17 +30,17 @@ const Hero = () => {
             <Button asChild className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
               <a href="#contact">Get In Touch</a>
             </Button>
-            <Button variant="outline" asChild className="border-white/20 text-white hover:bg-white/10">
+            <Button asChild className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
               <a href="#projects">View Projects</a>
             </Button>
           </div>
           
           <div className="flex justify-center gap-6">
-            <a href="https://linkedin.com/in/adhithyagp" target="_blank" rel="noopener noreferrer" 
+            <a href="https://www.linkedin.com/in/adhithya77/" target="_blank" rel="noopener noreferrer" 
                className="text-gray-400 hover:text-white transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://github.com/adhithyagp" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/Adhithya2110" target="_blank" rel="noopener noreferrer"
                className="text-gray-400 hover:text-white transition-colors">
               <Github className="w-6 h-6" />
             </a>

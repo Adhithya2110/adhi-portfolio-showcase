@@ -57,13 +57,13 @@ const Contact = () => {
                   <p className="text-gray-300 mb-6">Connect with me on social platforms</p>
                   <div className="flex justify-center gap-4">
                     <Button asChild className="bg-[#0077B5] hover:bg-[#005582]">
-                      <a href="https://linkedin.com/in/adhithyagp" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.linkedin.com/in/adhithya77/" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="w-5 h-5 mr-2" />
                         LinkedIn
                       </a>
                     </Button>
                     <Button asChild className="bg-gray-800 hover:bg-gray-700">
-                      <a href="https://github.com/adhithyagp" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/Adhithya2110" target="_blank" rel="noopener noreferrer">
                         <Github className="w-5 h-5 mr-2" />
                         GitHub
                       </a>

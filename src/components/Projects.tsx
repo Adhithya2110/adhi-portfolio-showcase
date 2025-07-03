@@ -1,8 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -73,17 +71,6 @@ const Projects = () => {
                         </Badge>
                       ))}
                     </div>
-                  </div>
-                  
-                  <div className="flex gap-3 pt-4">
-                    <Button size="sm" variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>
-                    <Button size="sm" className={`bg-gradient-to-r ${project.gradient} hover:opacity-90`}>
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </Button>
                   </div>
                 </div>
               </CardContent>
