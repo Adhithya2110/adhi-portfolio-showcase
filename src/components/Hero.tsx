@@ -22,7 +22,7 @@ const Hero = () => {
           
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
             Passionate AI/ML Engineer with expertise in computer vision, LLMs, and cloud platforms. 
-            Currently building innovative solutions at Shellkode with experience in object detection, 
+            Developed innovative solutions at Shellkode, with hands-on experience in object detection,
             content moderation, and fashion attribute extraction.
           </p>
           
