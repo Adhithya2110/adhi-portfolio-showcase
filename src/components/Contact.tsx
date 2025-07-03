@@ -21,7 +21,7 @@ const Contact = () => {
       icon: MapPin,
       label: "Location",
       value: "Coimbatore, India",
-      href: "#"
+      href: "https://maps.google.com/?q=Coimbatore,India"
     }
   ];
 
@@ -45,7 +45,7 @@ const Contact = () => {
                       <info.icon className="w-6 h-6 text-white" />
                     </div>
                     <p className="text-gray-400 text-sm mb-1">{info.label}</p>
-                    <a href={info.href} className="text-white hover:text-blue-400 transition-colors">
+                    <a href={info.href} target={info.label === "Location" ? "_blank" : "_self"} rel={info.label === "Location" ? "noopener noreferrer" : ""} className="text-white hover:text-blue-400 transition-colors">
                       {info.value}
                     </a>
                   </div>
