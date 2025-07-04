@@ -1,10 +1,20 @@
 
-import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    // Create a dummy resume download - you can replace this with your actual resume file
+    const link = document.createElement('a');
+    link.href = '#'; // Replace with actual resume file path
+    link.download = 'Adhithya_GP_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
@@ -32,6 +42,10 @@ const Hero = () => {
             </Button>
             <Button asChild className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
               <a href="#projects">View Projects</a>
+            </Button>
+            <Button onClick={handleDownloadResume} className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600">
+              <Download className="w-4 h-4 mr-2" />
+              Download Resume
             </Button>
           </div>
           

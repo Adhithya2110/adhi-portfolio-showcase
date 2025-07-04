@@ -1,6 +1,7 @@
 
 import { ArrowDown, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -17,7 +18,9 @@ const Index = () => {
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold text-white">Adhithya G P</div>
             <div className="hidden md:flex space-x-8">
-              <a href="#skills" className="text-white/80 hover:text-white transition-colors">About</a>
+              <a href="#home" className="text-white/80 hover:text-white transition-colors">Home</a>
+              <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
+              <a href="#skills" className="text-white/80 hover:text-white transition-colors">Skills</a>
               <a href="#experience" className="text-white/80 hover:text-white transition-colors">Experience</a>
               <a href="#projects" className="text-white/80 hover:text-white transition-colors">Projects</a>
               <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
@@ -29,6 +32,7 @@ const Index = () => {
       {/* Main Content */}
       <main>
         <Hero />
+        <About />
         <Skills />
         <Experience />
         <Projects />
