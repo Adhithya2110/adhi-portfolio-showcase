@@ -59,30 +59,30 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-black/20">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-black/20">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+          <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-2">
             Ready to collaborate on innovative AI/ML projects or discuss opportunities
           </p>
         </div>
         
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Contact Information */}
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-                <div className="space-y-6 mb-8">
+              <CardContent className="p-4 sm:p-6 md:p-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 sm:mb-6">Contact Information</h3>
+                <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-center group">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <info.icon className="w-6 h-6 text-white" />
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:scale-110 transition-transform duration-300">
+                        <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                       </div>
                       <div>
-                        <p className="text-gray-400 text-sm">{info.label}</p>
-                        <a href={info.href} target={info.label === "Location" ? "_blank" : "_self"} rel={info.label === "Location" ? "noopener noreferrer" : ""} className="text-white hover:text-blue-400 transition-colors">
+                        <p className="text-gray-400 text-xs sm:text-sm">{info.label}</p>
+                        <a href={info.href} target={info.label === "Location" ? "_blank" : "_self"} rel={info.label === "Location" ? "noopener noreferrer" : ""} className="text-white hover:text-blue-400 transition-colors text-sm sm:text-base">
                           {info.value}
                         </a>
                       </div>
@@ -90,18 +90,18 @@ const Contact = () => {
                   ))}
                 </div>
                 
-                <div className="border-t border-white/10 pt-8">
-                  <p className="text-gray-300 mb-6">Connect with me on social platforms</p>
-                  <div className="flex gap-4">
-                    <Button asChild className="bg-[#0077B5] hover:bg-[#005582]">
+                <div className="border-t border-white/10 pt-6 sm:pt-8">
+                  <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Connect with me on social platforms</p>
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <Button asChild className="bg-[#0077B5] hover:bg-[#005582] text-sm sm:text-base">
                       <a href="https://www.linkedin.com/in/adhithya77/" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="w-5 h-5 mr-2" />
+                        <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                         LinkedIn
                       </a>
                     </Button>
-                    <Button asChild className="bg-gray-800 hover:bg-gray-700">
+                    <Button asChild className="bg-gray-800 hover:bg-gray-700 text-sm sm:text-base">
                       <a href="https://github.com/Adhithya2110" target="_blank" rel="noopener noreferrer">
-                        <Github className="w-5 h-5 mr-2" />
+                        <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                         GitHub
                       </a>
                     </Button>
@@ -112,8 +112,8 @@ const Contact = () => {
 
             {/* Contact Form */}
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-6">Send Message</h3>
+              <CardContent className="p-4 sm:p-6 md:p-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 sm:mb-6">Send Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <Input

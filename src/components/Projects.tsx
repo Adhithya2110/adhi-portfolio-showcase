@@ -31,42 +31,42 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
+          <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto px-2">
             Innovative AI/ML solutions showcasing expertise in computer vision and LLM applications
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <Card key={index} className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
-              <CardHeader>
+              <CardHeader className="pb-4">
                 <div className={`w-full h-2 bg-gradient-to-r ${project.gradient} rounded-full mb-4`}></div>
-                <CardTitle className="text-white text-xl mb-2">{project.title}</CardTitle>
-                <p className="text-gray-300">{project.description}</p>
+                <CardTitle className="text-white text-lg sm:text-xl mb-2">{project.title}</CardTitle>
+                <p className="text-gray-300 text-sm sm:text-base">{project.description}</p>
               </CardHeader>
-              <CardContent>
+              <CardContent className="px-4 sm:px-6">
                 <div className="space-y-4">
                   <div>
-                    <h4 className="text-white font-semibold mb-2">Key Features:</h4>
+                    <h4 className="text-white font-semibold mb-2 text-sm sm:text-base">Key Features:</h4>
                     <ul className="space-y-2">
                       {project.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start gap-3 text-gray-300">
                           <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                          <span className="text-sm">{feature}</span>
+                          <span className="text-xs sm:text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="text-white font-semibold mb-2">Technologies:</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="text-white font-semibold mb-2 text-sm sm:text-base">Technologies:</h4>
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                       {project.tech.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="border-white/20 text-gray-300">
+                        <Badge key={techIndex} variant="outline" className="border-white/20 text-gray-300 text-xs sm:text-sm">
                           {tech}
                         </Badge>
                       ))}
